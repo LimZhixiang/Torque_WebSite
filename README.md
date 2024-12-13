@@ -1,3 +1,4 @@
-# <img src="./image/index-img/logo.png" alt="Torque WebSite" width="50px" /> Torque WebSite Project
-
-
+<div align="center">
+	<img src="./image/index-img/logo.png" alt="Torque WebSite" width="50px" />
+	<h3 align="center">Torque Car Magazine Web App</h3>
+</div>
