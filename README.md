@@ -9,4 +9,4 @@ This project showcases the development of a dynamic and responsive car magazine 
 - Interactive Elements: Includes user-friendly naviagation and interactive components to engage visitors
 
 #SKILLS APPLIED
-![Static Badge](https://img.shields.io/badge/HTML5-black?style=flat&logo=html5&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/HTML5-black?style=flat&logo=html5&logoSize=large)
