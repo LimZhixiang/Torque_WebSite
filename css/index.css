@@ -1,0 +1,54 @@
+/* adjusting carousel control buttons margins */
+#carousel-main-control-next{
+    margin-right: 6vw;
+}
+#carousel-main-control-prev{
+    margin-left: 6vw;
+}
+
+/* reduce opacity to 65% of img in carousel so that the text can be seen better */
+.carousel-main-img{
+    opacity: .65;
+}
+
+/* adding transition to carousel so that the images have a fade in and out effect */
+.carousel-main-item{
+    transition: opacity 1.5s ease-in-out;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover; /* This will crop and scale the images to fit the fixed height */
+}
+
+/* initialise the specs-container display to none so that it doesnt show when screen loads */
+.specs-container{
+    display: none;
+}
+
+/* Define a different color for visited links */
+a:visited {
+    color: white; /* Set the color for visited links to white */
+}
+
+/* Media query for screens with a maximum width of 820px */
+@media (max-width: 820px) {
+    /* Adjust the position and styling of carousel captions for smaller screens */
+    .carousel-caption {
+        position: sticky; /* Make the caption sticky at the bottom */
+        bottom: 0; /* Stick it to the bottom of the carousel */
+        transform: none; /* Remove any transformation */
+        width: 100%; /* Set the width to 100% of the parent container */
+    }
+
+    /* Increase the font size of paragraph elements inside carousel captions */
+    .carousel-caption p {
+        font-size: 20px; /* Set the font size to 20 pixels */
+    }
+
+    /* Adjust the margin at the bottom of carousel control buttons */
+    .carousel-control-next,
+    .carousel-control-prev {
+        margin-bottom: 40%; /* Add some margin at the bottom of the control buttons */
+    }
+}

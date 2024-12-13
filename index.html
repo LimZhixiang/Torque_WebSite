@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- bootstrap css style sheet -->
+        <link href="./css/css-bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/glitch-slap" rel="stylesheet">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link href="./css/index.css" rel="stylesheet">
+        <link href="./css/template.css" rel="stylesheet">
+    </head>
+    <body id="body_bg" class="bg-dark">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient py-3">
+            <div class="container">
+                <!-- brand logo and link to index.html-->
+                <a class="navbar-brand fs-2" href="index.html">
+                    <img class="brand-logo"
+                    src="image/index-img/logo.png"
+                    width="50"
+                    height="50" alt="Torque logo">
+                    Torque
+                </a>
+                <!-- side-bar button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- side-bar header -->
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Torque Magazine</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <!-- Navbar-items
+                justify content end - nav-items appear on the right of nav-bar,
+                fs-4 - set nav-item font size
+                pe-4 - set padding end to 4 -->
+                  <ul class="navbar-nav justify-content-end fs-4 flex-grow-1 pe-4">
+                    <!-- link to index.html, current active page -->
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <!-- link to reviews.html -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="./reviews.html">Reviews</a>
+                    </li>
+                    <!-- link to car_share.html -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="car_share.html">Car Share</a>
+                    </li>
+                    <!-- link to events.html -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <!-- link to f1.html -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="f1.html">F1</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <!-- CAROUSEL -->
+        <div id="main-carousel" class="carousel slide carousel-fade px-md-0 px-2" data-bs-ride="carousel">
+            <!-- carousel item 1 -->
+            <div class="carousel-inner">
+              <div class="carousel-main-item carousel-item active">
+                <!-- carousel image -->
+                <img src="./image/index-img/main-carousel/A45s.webp" class="d-block w-100 rounded-3 carousel-main-img" alt="Mercedes A45s picture">
+                <!-- carousel caption 1 -->
+                <div class="carousel-caption d-md-block fs-2 text-start">
+                    <h2>Mercedes A45s</h2>
+                    <p>The super-hatch that matches supercar performance on a straightline and corners like a racecar</p>
+                </div>
+              </div>
+              <!-- carousel item 2 -->
+              <div class="carousel-main-item carousel-item">
+                <!-- carousel image -->
+                <img src="./image/index-img/main-carousel/fk8.webp" class="d-block w-100 rounded-3 carousel-main-img"  alt="Honda Fk8 picture">
+                <!-- carousel caption 2 -->
+                <div class="carousel-caption d-md-block fs-3 text-start" >
+                    <h2>Car Of The Year 2023</h2>
+                    <p>The Car that won our Car Of The Year Award. Best driver's car at a affordable price, Honda Civic Type-R</p>
+                </div>
+              </div>
+              <!-- carousel item 3 -->
+              <div class="carousel-main-item carousel-item">
+                <!-- carousel image -->
+                <img src="./image/index-img/main-carousel/amg_one.webp" class="d-block w-100 rounded-3 carousel-img" alt="Mercedes AMG picture...">
+                <!-- carousel caption 3 -->
+                <div class="carousel-caption d-md-block fs-2 text-start">
+                    <h2>Mercedes AMG ONE</h2>
+                    <p>When F1 technologies are being implemented onto a road car, you get a legal race car on the road</p>
+                </div>
+              </div>
+            </div>
+            <!-- carousel prev button -->
+            <button class="carousel-control-prev" id="carousel-main-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <!-- carousel prev button -->
+            <button class="carousel-control-next" id="carousel-main-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- REVIEWS CONTAINER
+            text-light - font color white
+            text-center - center text
+            mt-1 - margin top
+            mt-md-4 margin top changes to 4 when screen size medium -->
+          <div id="review-container" class="container text-center text-light mt-1 mt-md-4">
+            <!-- review link -->
+            <div class="row mb-1 mb-md-4">
+                <a class="links text-light" href="reviews.html"><h1>REVIEWS</h1></a>
+            </div>
+            <div class="row">
+                <!-- reviews cards 1
+                col-12 occupy row when less than md screen size
+                col-md-4 occupy 1/3 of row when larger than md screen size
+                px-3 padding x-axis 3
+                py-3 padding y-axis 3 when screen size less than lg
+                py-lg-0 padding y-axis 0 when screen size mre than lg -->
+                <div class="col-12 col-md-4 px-3 py-3 py-lg-0">
+                    <div class="card">
+                        <img src="./image/index-img/reviews/glc63s.webp" class="card-img-top" alt="Mercedes GLC63s picture">
+                        <div class="card-body">
+                            <!-- review title -->
+                            <h5 class="card-title">2023 Mercedes GLC63S</h5>
+                            <!-- review description -->
+                            <p class="card-text">Luxury and power.It redefines driving with its blend of sophistication and performance. Experience the adrenaline of raw power combined with refined comfort in this stunning SUV.</p>
+                            <!-- review specs container -->
+                            <div class="specs-container" id="specs-container-1">
+                                <div class="row text-justify">
+                                    <h6>Specs Sheet</h6>
+                                </div>
+                                <div class="row py-0">
+                                    <p>Engine: 4.0L V8 (510HP, 700Nm)</p>
+                                    <p>Drivetrain: AWD 4-Matic</p>
+                                    <p>Gearbox: 9-Speed Automatic</p>
+                                    <p>Suspension: Independent front suspension</p>
+                                </div>
+                            </div>
+                            <!-- button to toggle review specs container -->
+                            <button id="toggleButton1" class="btn btn-primary" onclick="toggleRow()">View Specs</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- review cards 2 -->
+                <div class="col-12 col-md-4 px-3 py-3 py-lg-0">
+                    <div class="card">
+                        <img src="./image/index-img/reviews/rs3.jpg" class="card-img-top" alt="Audi RS3 picture">
+                        <div class="card-body">
+                            <!-- review title -->
+                            <h5 class="card-title">2023 Audi RS3</h5>
+                            <!-- review description -->
+                            <p class="card-text">Precision engineering, advanced technology, and exhilarating performance merge seamlessly. Elevate your journeys with a perfect blend of power, agility, and sophistication.</p>
+                            <!-- review specs container -->
+                            <div class="specs-container" id="specs-container-2">
+                                <div class="row text-justify">
+                                    <h6>Specs Sheet</h6>
+                                </div>
+                                <div class="row py-0">
+                                    <p>Engine: 2.5L Inline-5 (401HP, 500Nm)</p>
+                                    <p>Drivetrain: AWD Quattro</p>
+                                    <p>Gearbox: 7-speed DCT</p>
+                                    <p>Suspension: Front struts, Rear Multilink</p>
+                                </div>
+                            </div>
+                            <!-- button to toggle review specs container -->
+                            <button id="toggleButton2" class="btn btn-primary" onclick="toggleRow()">View Specs</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- review cards 3 -->
+                <div class="col-12 col-md-4 px-3 py-3 py-lg-0">
+                    <div class="card">
+                        <img src="./image/index-img/reviews/m3.webp" class="card-img-top" alt="BMW M3 photo">
+                        <div class="card-body">
+                            <!-- review title -->
+                            <h5 class="card-title">2023 BMW M3</h5>
+                            <!-- review description -->
+                            <p class="card-text">Experience driving euphoria with the 2023 BMW M3. Immerse yourself in a symphony of power, precision, and style. Unleash the road's potential and redefine your connection with the asphalt.</p>
+                            <!-- review specs container -->
+                            <div class="specs-container" id="specs-container-3">
+                                <div class="row text-justify">
+                                    <h6>Specs Sheet</h6>
+                                </div>
+                                <div class="row py-0">
+                                    <p>Engine: 3.0L Inline-6 (510HP, 650Nm)</p>
+                                    <p>Drivetrain: RWD</p>
+                                    <p>Gearbox: 8-Speed Automatic</p>
+                                    <p>Suspension: Front struts, Rear Multilink</p>
+                                </div>
+                            </div>
+                            <!-- button to toggle review specs container -->
+                            <button id="toggleButton3" class="btn btn-primary" onclick="toggleRow()">View Specs</button>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <!-- EVENTS CONTAINER -->
+        <div id="events-container" class="container text-light text-center mt-1 mt-md-4">
+            <div class="row mb-1 mb-md-4">
+                <a class="links text-light" href="events.html"><h1>EVENTS</h1></a>
+            </div>
+            <div class="row">
+                <!-- events 1
+                col-12 occupy row when less than md screen size
+                col-md-4 occupy 1/3 of row when larger than md screen size
+                px-3 padding x-axis 3
+                py-3 padding y-axis 3 when screen size less than lg
+                py-lg-0 padding y-axis 0 when screen size mre than lg -->
+                <div class="col-12 col-md-4 px-3 py-3 py-lg-0">
+                    <!-- event 1 img  -->
+                    <div class="row">
+                        <img src="./image/index-img/Events/Event1.webp" class="img-fluid" alt="JDM Carmeet Poster">
+                    </div>
+                    <div class="row mt-3">
+                        <!-- event 1 header -->
+                        <h4>JDM Car Meet</h4>
+                        <!-- event 1 description -->
+                        <p>The once a year Jdm Car meet is back, this year with booths that are set up by renowed tuners in singapore including Garage R, Etuners, BMS tuning and many other more. Register now to recieve a limited goodie bag</p>
+                    </div>
+                </div>
+                <!-- events 2 -->
+                <div class="col-12 col-md-4 px-3 py-3 py-lg-0">
+                    <!-- event 2 img  -->
+                    <div class="row">
+                        <img src="./image/index-img/Events/Event2.webp" class="img-fluid" alt="Torque Track Day event Poster">
+                    </div>  
+                    <div class="row mt-3">
+                        <!-- event 2 header -->
+                        <h4>Torque Track Day</h4>
+                        <!-- event 2 description -->
+                        <p>Join us for an exhilarating day at Sepang International Circuit! Torque Track Day is back, bringing you the ultimate speed experience. Feel the power, conquer the curves, and ignite your passion for motorsports.</p>
+                    </div>
+                </div>
+                <!-- events 3 -->
+                <div class="col-12 col-md-4 px-3 py-3 py-lg-0">
+                    <!-- event 3 img  -->
+                    <div class="row">
+                        <img src="./image/index-img/Events/Event_3.webp" class="img-fluid" alt="Cars & Coffee photoshoot poster">
+                    </div>
+                    <div class="row mt-3">
+                        <!-- event 3 header -->
+                        <h4>Cars & Coffee Photoshoot</h4>
+                        <!-- event 3 description -->
+                        <p>The annual photoshoot event is back again, bring your ride along to join us for cars & coffee as well as a photoshoot along singapore skylines. Food and drinks will be provided.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer container,
+        mt-5 margin top,
+        px-5 padding x-axis,
+        text-light white text,
+        bg-gradient gradient background -->
+        <footer class="container-fluid mt-5 px-5 bg-gradient text-light">
+            <div class="footer_container">
+                <!-- magazine name occupy 1 row-->
+                <div class="row">
+                    <h2 class="mb-0 col-12">TORQUE MAGAZINE</h2>
+                </div>
+                <!-- useful info row -->
+                <div class="row pt-3">
+                    <!-- About us,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>About Us</h3>
+                        <h6>What we do?</h6>
+                        <h6>Career</h6>
+                        <h6>Advertisements</h6>
+                        <h6>Our Members</h6>
+                    </div>
+                    <!-- Contact us,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>Contact Us</h4>
+                        <h6>Address: Blk 758 Ang Mo Kio Ave 6 #01-73 S(560638)</6>
+                        <h6>Contact: +65 93635888</h5>
+                    </div>
+                    <!-- Social Media,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>Social Media</h4>
+                        <!-- social media icons -->
+                        <div class="row d-flex align-items-center">
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/insta_logo.png" alt="instagram link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/fb_logo.png" alt="facebook link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/twitter_logo.png" alt="twitter link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/whatsapp_logo.png" alt="whatsapp link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/index.js"></script>
+        <!-- bootstrap js -->
+        <script src="./js/js-bootstrap/bootstrap.min.js"></script>
+    </body>
+</html>

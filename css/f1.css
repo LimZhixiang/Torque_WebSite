@@ -1,0 +1,76 @@
+/* Apply styles to all 'p' elements */
+p {
+    margin: 0; /* Remove default margin for 'p' elements */
+}
+
+/* Apply margin to elements with class 'f1_container' */
+.f1_container {
+    margin: 0 5vw; /* Margin on left and right sides, 5% of viewport width each */
+}
+
+/* Apply styles to elements with class 'country_flag' */
+.country_flag {
+    height: 1.5rem; /* Set the height of the element to 1.5rem (relative to font size) */
+    width: auto; /* Automatically adjust width to maintain aspect ratio */
+    border-radius: 4px; /* Add rounded corners with a 4px radius */
+}
+
+/* Apply styles to elements with class 'circuit' */
+.circuit {
+    width: 100%; /* Set width to 100% of the parent container */
+    height: 90%; /* Set height to 90% of the parent container */
+    border-radius: 1.5rem; /* Add rounded corners with a 1.5rem radius */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Scale the background image to cover the entire element */
+    filter: grayscale(40%); /* Apply a 40% grayscale filter to the element */
+}
+
+/* Apply styles to elements with class 'upcoming_box' */
+.upcoming_box {
+    transform: translateX(400%); /* Initially translate the element 400% to the right */
+    transition: transform 0.5s ease; /* Apply a smooth transition effect on transform */
+}
+
+/* Apply styles to elements with class 'upcoming_box' when the 'show' class is applied */
+.upcoming_box.show {
+    transform: translateX(0%); /* Translate the element back to its original position */
+}
+
+/* Apply styles to elements with class 'upcoming_box' when hovered */
+.upcoming_box:hover {
+    transform: scale(1.05); /* Scale the element to 105% of its original size on hover */
+}
+
+/* Apply background image to elements with id 'singapore_bg' */
+#singapore_bg {
+    background-image: url("../image/f1-img/singapore_bg.webp"); /* Set background image */
+}
+
+/* Apply background image to elements with id 'japan_bg' */
+#japan_bg {
+    background-image: url("../image/f1-img/japan_bg.avif"); /* Set background image */
+}
+/* Apply background image to elements with id 'qatar_bg' */
+#qatar_bg{
+    background-image: url("../image/f1-img/qatar_bg.jpg"); /* Set background image */
+}
+/* Apply background image to elements with id 'usa_bg' */
+#usa_bg{
+    background-image: url("../image/f1-img/usa_bg.webp"); /* Set background image */
+}
+/* Apply background image to elements with id 'mexico_bg' */
+#mexico_bg{
+    background-image: url("../image/f1-img/mexico_bg.jpg"); /* Set background image */
+}
+/* Apply background image to elements with id 'brazil_bg' */
+#brazil_bg{
+    background-image: url("../image/f1-img/brazil_bg.webp"); /* Set background image */
+}
+/* Apply background image to elements with id 'vegas_bg' */
+#vegas_bg{
+    background-image: url("../image/f1-img/vegas_bg.webp"); /* Set background image */
+}
+/* Apply background image to elements with id 'uae_bg' */
+#uae_bg{
+    background-image: url("../image/f1-img/uae_bg.jpg"); /* Set background image */
+}

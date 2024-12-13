@@ -1,0 +1,28 @@
+/* Apply custom text to the whole body */
+body{
+    font-family: 'Glitch Slap', sans-serif;
+}
+/* apply custom text to all the <p> tags */
+p{
+    font-family: 'Roboto', sans-serif;
+}
+/* adding a 20px margin left and right of nav-bar items */
+.nav-item {
+    margin:0px 20px;
+}
+.footer_container{
+    padding: 2em 5em;
+}
+a {
+    transition: transform 0.5 ease-in-out ;
+}
+/* scale the <a> buttons by 5percent when hovered on */
+a:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 820px) {
+    .footer_container{
+        padding:2em 0;
+    }
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="./css/css-bootstrap/bootstrap.min.css" async>
+        <!-- cdn font -->
+        <link href="https://fonts.cdnfonts.com/css/glitch-slap" rel="stylesheet">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link href="./css/events.css" rel="stylesheet">
+        <link href="./css/template.css" rel="stylesheet">
+    </head>
+    <body class="bg-dark">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient py-3">
+            <div class="container">
+                <!-- brand logo and link to index.html-->
+                <a class="navbar-brand fs-2" href="index.html">
+                    <img class="brand-logo"
+                    src="image/index-img/logo.png"
+                    width="50"
+                    height="50" alt="Torque logo">
+                    Torque
+                </a>
+                <!-- side-bar button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- side-bar header -->
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Torque Magazine</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <!-- Navbar-items
+                justify content end - nav-items appear on the right of nav-bar,
+                fs-4 - set nav-item font size
+                pe-4 - set padding end to 4 -->
+                  <ul class="navbar-nav justify-content-end fs-4 flex-grow-1 pe-4">
+                    <!-- link to index.html -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!-- link to reviews.html -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="./reviews.html">Reviews</a>
+                    </li>
+                    <!-- link to car_share.html -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="car_share.html">Car Share</a>
+                    </li>
+                    <!-- link to events.html, current active page-->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="events.html">Events</a>
+                    </li>
+                    <!-- link to f1.html -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="f1.html">F1</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <!-- event highlight container, with orange border at the bottom -->
+        <div id="event_highlight_container" class="container text-light text-center border-bottom border-3 border-warning">
+            <div class="row">
+                <!-- event hightlight video with rounded border -->
+                <video autoplay muted controls loop class="rounded-4">
+                    <source src="image/events-img/Untitled video - Made with Clipchamp (2).webm" type="video/mp4" alt="Toque X agi trackday video">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- event hightlight photos container carousel -->
+            <div class="row my-4 ">
+                <div class="col-12 col-md-6 align-items-center d-flex">
+                    <div class="highlights-carousel">
+                        <!-- carousel img item 1 -->
+                        <div class="highlights-img active">
+                            <img class="img-fluid rounded-3" src="./image/events-img/highlight-carousel/event_highlight1.webp" alt="Toque X agi trackday photo">
+                        </div>
+                        <!-- carousel img item 2 -->
+                        <div class="highlights-img">
+                            <img class="img-fluid rounded-3" src="./image/events-img/highlight-carousel/event_highlight2.webp" alt="Toque X agi trackday photo">
+                        </div>
+                        <!-- carousel img item 3 -->
+                        <div class="highlights-img">
+                            <img class="img-fluid rounded-3" src="./image/events-img/highlight-carousel/event_highlight3.webp" alt="Toque X agi trackday photo">
+                        </div>
+                    </div>
+                </div>
+                <!-- event description container 
+                occupies row when small screen,
+                occupies half of the row when medium screen and large screen
+                margin top zero when medium screen and large screen-->
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                    <!-- event highlight header -->
+                    <h2 class="Header">
+                        <span class="TORQUE">TORQUE</span>
+                        <span class="red-text">X</span>
+                        <span class="text-light">AGI TRACKDAY JULY 2023</span>
+                    </h2>
+                    <!-- event highlight description -->
+                    <p>Its a wrap for July 2023 trackday.</p>
+                    <p>A total of 60 cars under different categories joined the event. Once again we would like to thank the 
+                        sponsors for making this event a reality. Congrats to all the prize winners as well. Stay tunned on our
+                         events page to look out for the upcoming track day.
+                    </p>
+                    <!-- event highlight sponsors -->
+                    <div class="row pt-0 px-5 mx-5 mt-lg-5 gx-5">
+                        <img class="col-6" src="./image/events-img/highlight-carousel/AGI_LOGO.png" alt="Toque X agi trackday sponsor">
+                        <img class="col-6" src="./image/events-img/highlight-carousel/AP_Racing_LOGO.png" alt="Toque X agi trackday sponsor">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Upcoming events container -->
+        <div id="upcoming_events_container" class="container text-light text-center mt-4">
+            <!-- upcoming events header -->
+            <div class="row">
+                <h1 class="Header">Upcoming Events</h1>
+            </div>
+            <!-- upcoming events 1 container, with defferent margins on different screen size -->
+            <div class="row mt-md-4 mt-2 mb-md-0 mb-5 align-items-center d-flex">
+                <!-- upcoming event 1 image,
+                occupies whole row when smaller than medium screen size
+                occupues 5 columns when above medium screen size -->
+                <div class="col-12 col-md-5">
+                    <img class="img-fluid rounded-3" src="./image/index-img/Events/Event2.webp" alt="torque trackday poster">
+                </div>
+                <!-- upcoming event 1 description,
+                occupies whole row when smaller than medium screen size,
+                occupies 7 columns when above medium screen size -->
+                <div class="col-12 col-md-7 mt-4 mt-md-0 align-items-center d-flex">
+                    <div class="container text-center text-md-start">
+                        <h2 id="event1_header" class="events_header">Torque Track Day</h2>
+                        <p>The long awaited track day is back! Due to overwhelming reponsse for the previous track day, we will be
+                            opening up 80 slots for this track day. Push your vehicles to the limit in a safe environment without the 
+                            need to worry about traffic police. Prizes will be given out to the fastest in their category! Catering of 
+                            food will also be provided, bring your friends and family along for a ride! Early birds who register before
+                            19 Sep will also be given a goodie bag.
+                        </p>
+                        <!-- button to uncollapse the registration container -->
+                         <button class="register_button" id="register_button1">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- upcoming events 2 container, with defferent margins on different screen size -->
+            <div class="row mt-md-4 mt-2 mb-md-0 mb-5 align-items-center d-flex">
+                <!-- upcoming event 2 image -->
+                <div class="col-12 col-md-5">
+                    <img class="img-fluid rounded-3" src="./image/index-img/Events/Event1.webp" alt="JDM carmeet poster">
+                </div>
+                <!-- upcoming event 2 description -->
+                <div class="col-12 col-md-7 mt-4 mt-md-0 align-items-center d-flex">
+                    <div class="container text-center text-md-start">
+                        <h2 id="event2_header" class="events_header">JDM Car Meet Oct 2023</h2>
+                        <p>Get ready for an adrenaline-packed, exclusive JDM car meet-up. If you're 
+                        passionate about Japanese car culture, this is the event for you. We're bringing the finest JDM 
+                        enthusiasts and their iconic rides, from legendary Supras to agile GT-Rs. Whether you're a proud 
+                         owner or simply an admirer of Japanese automotive excellence, mark your calendar for this unforgettable gathering.
+                         Join us and fuel your passion for all things JDM!</p>
+                         <!-- button to uncollapse the registration container -->
+                         <button class="register_button" id="register_button2">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- upcoming events 3 container, with defferent margins on different screen size -->
+            <div class="row mt-md-4 mt-2 mb-md-0 mb-5 align-items-center d-flex">
+                <!-- upcoming event 2 image -->
+                <div class="col-12 col-md-5">
+                    <img class="img-fluid rounded-3" src="./image/index-img/Events/Event_3.webp" alt="Cars & coffee photoshoot poster">
+                </div>
+                <!-- upcoming event 3 description -->
+                <div class="col-12 col-md-7 mt-4 mt-md-0 align-items-center d-flex">
+                    <div class="container text-center text-md-start">
+                        <h2 id="event3_header" class="events_header">Cars & Coffee PhotoShoot</h2>
+                        <p>Get ready as we visit different attractions in Singapore to take photos of your beloved rides. Places that we will
+                            be visiting include Marina Bay Sans, Singapore Airlines F1 grandstand, Marina Barrage and may more. We will also be
+                            taking rolling shots along Coastal roads. Mark the date on your calender. Food and drinks will be provided, do bring
+                            along your family as activities will be planned for kids and adults likewise.
+                        </p>
+                         <!-- button to uncollapse the registration container -->
+                         <button class="register_button" id="register_button3">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- event registration container, that is hidden when the webpage loads -->
+        <div id="event_registration_container" class="form-container text-dark p-3 rounded-2 collapse">
+            <div class="container">
+                <!-- event registration header -->
+                <div class="row">
+                    <h2 class="col-8"id="event_registration">Event Registration</h2>
+                </div>
+                <!-- option to select which event to register for  -->
+                <select>
+                    <option class="event_option"></option>
+                    <option class="event_option"></option>
+                    <option class="event_option"></option>
+                </select>
+                <!-- input to get user's name -->
+                <div class="mb-2">
+                    <p class="mb-1">Name:</p>
+                    <input placeholder="Enter your name">
+                </div>
+                <!-- input to get user's contact -->
+                <div class="mb-2">
+                    <p class="mb-1">Contact No:</p>
+                    <input placeholder="contact">
+                </div>
+                <!-- input to get user's vehicle model -->
+                <div class="mb-2">
+                    <p class="mb-1">Vehicle Model:</p>
+                    <input placeholder="Car model">
+                </div>
+                <!-- input to get user's carplate no.-->
+                <div class="mb-2">
+                    <p class="mb-1">Carplate:</p>
+                    <input placeholder="Carplate No">
+                </div>
+                <!-- input to get user's email -->
+                <div class="mb-3">
+                    <p class="mb-1">Email:</p>
+                    <input placeholder="Email">
+                </div>
+                <!-- button to submit registration -->
+                <button id="submit_registration">Submit</button>
+                <!-- button to close registration container-->
+                <button id="close_registration">Close</button>
+            </div>
+        </div>
+        <!-- pop-up after user seccessfully registered for event -->
+        <div id="successful_register" class="collapse">
+            <p class="mb-0">Event registered an email will be sent to you</p>
+        </div>
+        <!-- footer container,
+        mt-5 margin top,
+        px-5 padding x-axis,
+        text-light white text,
+        bg-gradient gradient background -->
+        <footer class="container-fluid mt-5 px-5 bg-gradient text-light">
+            <div class="footer_container">
+                <!-- magazine name occupy 1 row-->
+                <div class="row">
+                    <h2 class="mb-0 col-12">TORQUE MAGAZINE</h2>
+                </div>
+                <!-- useful info row -->
+                <div class="row pt-3">
+                    <!-- About us,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>About Us</h3>
+                        <h6>What we do?</h6>
+                        <h6>Career</h6>
+                        <h6>Advertisements</h6>
+                        <h6>Our Members</h6>
+                    </div>
+                    <!-- Contact us,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>Contact Us</h4>
+                        <h6>Address: Blk 758 Ang Mo Kio Ave 6 #01-73 S(560638)</6>
+                        <h6>Contact: +65 93635888</h5>
+                    </div>
+                    <!-- Social Media,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>Social Media</h4>
+                        <!-- social media icons -->
+                        <div class="row d-flex align-items-center">
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/insta_logo.png" alt="instagram link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/fb_logo.png" alt="facebook link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/twitter_logo.png" alt="twitter link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/whatsapp_logo.png" alt="whatsapp link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- bootstrap javascript -->
+        <script src="./js/js-bootstrap/bootstrap.min.js" async></script>
+        <script src="./js/events.js"></script>
+    </body>
+</html>

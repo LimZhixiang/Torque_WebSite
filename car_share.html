@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="./css/css-bootstrap/bootstrap.min.css" async>
+        <!-- cdn font -->
+        <link href="https://fonts.cdnfonts.com/css/glitch-slap" rel="stylesheet">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="./css/car_share.css" rel="stylesheet">
+        <link href="./css/template.css" rel="stylesheet">
+    </head>
+    <body class="bg-dark">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient py-3">
+            <div class="container">
+                <!-- brand logo and link to index.html-->
+                <a class="navbar-brand fs-2" href="index.html">
+                    <img class="brand-logo"
+                    src="image/index-img/logo.png"
+                    width="50"
+                    height="50" alt="Torque logo">
+                    Torque
+                </a>
+                <!-- side-bar button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- side-bar header -->
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Torque Magazine</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <!-- Navbar-items
+                justify content end - nav-items appear on the right of nav-bar,
+                fs-4 - set nav-item font size
+                pe-4 - set padding end to 4 -->
+                  <ul class="navbar-nav justify-content-end fs-4 flex-grow-1 pe-4">
+                    <!-- link to index.html, current active page -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!-- link to reviews.html -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="./reviews.html">Reviews</a>
+                    </li>
+                    <!-- link to car_share.html, current active page -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="car_share.html">Car Share</a>
+                    </li>
+                    <!-- link to events.html -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <!-- link to f1.html -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="f1.html">F1</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <!-- car share banner container -->
+        <div class="container text-light text-center justify-content-center">
+            <!-- car share logo/ icon -->
+            <img class="logo rounded-circle py-3" src="./image/car_share-img/car_share_logo.png" alt="car share logo">
+            <!-- banner header -->
+            <h1>Car Share</h1>
+            <!-- banner description -->
+            <h2 class="pb-3">Share your car pics to share with the community</h2>
+        </div>
+        <!-- car share posting container -->
+        <div class="container text-light text-center">
+            <!-- header -->
+            <h1>New Post</h1>
+            <!-- input for users to upload image -->
+            <input class="upload_img" type="file" id="InputImg" accept="image/*" >
+            <!-- label for input -->
+            <label for="InputImg">
+                <!-- logo for label -->
+                <span class="material-symbols-outlined">
+                    add_photo_alternate
+                </span>
+                <!-- text for label -->
+                Choose a Photo
+            </label>
+            <!-- container to show user selected img -->
+            <div class="show_upload_img_container mt-4">
+                <img id="show_upload_img" class="img-fluid rounded-3" src="./image/car_share-img/img_preview.png" alt="user car share picture preview"> 
+            </div>
+            <!-- input for user to enter caption for post -->
+            <div class="py-3">
+                <input type="text" id="InputCaption" placeholder="Enter Picture Caption">
+            </div>
+            <!-- button for user to upload their selected img and caption to the share_container -->
+            <button class="upload_button mb-3 mb-md-5">Post Now</button>
+        </div>
+        <div class="container">
+            <!-- share container -->
+            <div class="share_container text-light">
+                <!-- post container -->
+                <div class="post_container">
+                    <!-- img and caption  -->
+                    <img class="img-fluid rounded-3" src="./image/car_share-img/car_share1.jpeg" alt="user post">
+                    <h4>Tougue drive with the JDM gang on MT. Akina</h4>
+                </div>
+                <!-- post container -->
+                <div class="post_container">
+                    <!-- img and caption  -->
+                    <img class="img-fluid rounded-3" src="./image/car_share-img/car_share2.jpg" alt="user post">
+                    <h4>Rolling Shot on my blue R34 GTR</h4>
+                </div>
+                <!-- post container -->
+                <div class="post_container">
+                    <!-- img and caption  -->
+                    <img class="img-fluid rounded-3" src="./image/car_share-img/car_share3.jpg" alt="user post">
+                    <h4>BMW i3 beautiful key! Always love the classy design</h4>
+                </div>
+                <!-- post container -->
+                <div class="post_container">
+                    <!-- img and caption  -->
+                    <img class="img-fluid rounded-3" src="./image/car_share-img/car_share4.jpg" alt="user post">
+                    <h4>Alex's M2 with a wide bodykit.</h4>
+                </div>
+                <!-- post container -->
+                <div class="post_container">
+                    <!-- img and caption  -->
+                    <img class="img-fluid rounded-3" src="./image/car_share-img/car_share5.jpg" alt="user post">
+                    <h4>Watching my bros drive in while enjoying the seaview.</h4>
+                </div>
+                <!-- post container -->
+                <div class="post_container">
+                    <!-- img and caption  -->
+                    <img class="img-fluid rounded-3" src="./image/car_share-img/car_share6.jpg" alt="user post">
+                    <h4>Bugatti Chiron before attempting top speed run.</h4>
+                </div>
+                <!-- post container -->
+                <div class="post_container">
+                    <!-- img and caption  -->
+                    <img class="img-fluid rounded-3" src="./image/car_share-img/car_share7.jpg" alt="user post">
+                    <h4>Watching my first official race with my BF.</h4>
+                </div>
+                <!-- post container -->
+                <div class="post_container">
+                    <!-- img and caption  -->
+                    <img class="img-fluid rounded-3" src="./image/car_share-img/car_share8.jpg" alt="user post">
+                    <h4>Bringing my Civic Type R to the track for the first time.</h4>
+                </div>
+                <!-- post container -->
+                <div class="post_container rounded-3">
+                    <!-- img and caption  -->
+                    <img class="img-fluid" src="./image/car_share-img/car_share9.jpeg" alt="user post">
+                    <h4>#TeamJDM night drive with the bros.</h4>
+                </div>
+            </div>
+        </div>
+        <!-- footer container,
+        mt-5 margin top,
+        px-5 padding x-axis,
+        text-light white text,
+        bg-gradient gradient background -->
+        <footer class="container-fluid mt-5 px-5 bg-gradient text-light">
+            <div class="footer_container">
+                <!-- magazine name occupy 1 row-->
+                <div class="row">
+                    <h2 class="mb-0 col-12">TORQUE MAGAZINE</h2>
+                </div>
+                <!-- useful info row -->
+                <div class="row pt-3">
+                    <!-- About us,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>About Us</h3>
+                        <h6>What we do?</h6>
+                        <h6>Career</h6>
+                        <h6>Advertisements</h6>
+                        <h6>Our Members</h6>
+                    </div>
+                    <!-- Contact us,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>Contact Us</h4>
+                        <h6>Address: Blk 758 Ang Mo Kio Ave 6 #01-73 S(560638)</6>
+                        <h6>Contact: +65 93635888</h5>
+                    </div>
+                    <!-- Social Media,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>Social Media</h4>
+                        <!-- social media icons -->
+                        <div class="row d-flex align-items-center">
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/insta_logo.png" alt="instagram link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/fb_logo.png" alt="facebook link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/twitter_logo.png" alt="twitter link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/whatsapp_logo.png" alt="whatsapp link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- bootstrap Js -->
+        <script src="./js/js-bootstrap/bootstrap.min.js" async></script>
+        <script src="./js/car_share.js"></script>
+    </body>
+</html>

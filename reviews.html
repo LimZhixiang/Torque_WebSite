@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="./css/css-bootstrap/bootstrap.min.css" async>
+        <link href="https://fonts.cdnfonts.com/css/glitch-slap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="./css/reviews.css" rel="stylesheet">
+        <link href="./css/template.css" rel="stylesheet">
+    </head>
+    <body class="bg-dark" onload="selectInitialImage()">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient py-3">
+            <div class="container">
+                <!-- brand logo and link to index.html-->
+                <a class="navbar-brand fs-2" href="index.html">
+                    <img class="brand-logo"
+                    src="image/index-img/logo.png"
+                    width="50"
+                    height="50" alt="Torque logo">
+                    Torque
+                </a>
+                <!-- side-bar button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- side-bar header -->
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Torque Magazine</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <!-- Navbar-items
+                justify content end - nav-items appear on the right of nav-bar,
+                fs-4 - set nav-item font size
+                pe-4 - set padding end to 4 -->
+                  <ul class="navbar-nav justify-content-end fs-4 flex-grow-1 pe-4">
+                    <!-- link to index.html -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!-- link to reviews.html, current active page-->
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./reviews.html">Reviews</a>
+                    </li>
+                    <!-- link to car_share.html -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="car_share.html">Car Share</a>
+                    </li>
+                    <!-- link to events.html -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <!-- link to f1.html -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="f1.html">F1</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <!-- container for zx profile -->
+        <div class="container text-light text-center justify-content-center">
+            <div class="row pt-3 mb-5" id="zx_profile">
+                <!-- img of zx -->
+                <div class="d-flex justify-content-center mb-2">
+                    <img class="rounded-circle"style="height:168px; width:168px" src="./image/index-img/zx_profile.png" alt="reviewer profile picture">
+                </div>
+                <h3>Lim Zhi Xiang</h3>
+                <h4>Torque's Car reviewer</h4>
+                <p class="px-5">Passionate and seasoned Car Reviewer with a keen eye for detail and a deep appreciation for automotive excellence.</p>
+            </div>
+        </div>
+        <!-- review container -->
+        <div id="review-container" class="container text-light mt-1 mt-md-4 text-center">
+            <div class="row">
+                <!-- review card 1,
+                occupy 12 columns when small screen,
+                occupy 4 columns when medium screen and above,
+                padding zero when lage screen -->
+                <div class="col-12 col-md-4 px-3 py-3 py-lg-0">
+                    <div class="card">
+                        <!-- review card image -->
+                        <img src="./image/index-img/reviews/glc63s.webp" class="card-img-top" alt="Mercedes GLC63s picture">
+                        <div class="card-body">
+                            <!-- review card title -->
+                            <h5 class="card-title">2023 Mercedes GLC63S</h5>
+                            <!-- review card description -->
+                            <p class="card-text">Luxury and power.It redefines driving with its blend of sophistication and performance. Experience the adrenaline of raw power combined with refined comfort in this stunning SUV.</p>
+                            <!-- button to view GLC63s review container -->
+                            <button id="GLC63-review-button" class="btn btn-primary">View Full Review</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- review card 2 -->
+                <div class="col-12 col-md-4 px-3 py-3 py-lg-0">
+                    <div class="card">
+                        <!-- review card image -->
+                        <img src="./image/index-img/reviews/rs3.jpg" class="card-img-top" alt="Audi RS3 picture">
+                        <div class="card-body">
+                            <!-- review card title -->
+                            <h5 class="card-title">2023 Audi RS3</h5>
+                            <!-- review card description -->
+                            <p class="card-text">Precision engineering, advanced technology, and exhilarating performance merge seamlessly. Elevate your journeys with a perfect blend of power, agility, and sophistication.</p>
+                            <!-- button to view RS3 review container -->
+                            <button id="RS3-review-button" class="btn btn-primary">View Full Review</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- review card 3 -->
+                <div class="col-12 col-md-4 px-3 py-3 py-lg-0">
+                    <div class="card">
+                        <!-- review card image -->
+                        <img src="./image/index-img/reviews/m3.webp" class="card-img-top" alt="BMW M3 photo">
+                        <div class="card-body">
+                            <!-- review card title -->
+                            <h5 class="card-title">2023 BMW M3</h5>
+                            <!-- review card description -->
+                            <p class="card-text">Experience driving euphoria with the 2023 BMW M3. Immerse yourself in a symphony of power, precision, and style. Unleash the road's potential and redefine your connection with the asphalt.</p>
+                            <!-- button to view M3 review container -->
+                            <button id="M3-review-button" class="btn btn-primary">View Full Review</button>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <!-- close button to allow user to exit review container -->
+        <button id="close" class="collapse">X close</button>
+        <!-- GLC63S review container , collapsed when page loads up-->
+        <div class="container-fluid px-0 collapse" id="GLC63">
+            <!-- review banner -->
+            <img class="img-fluid w-100" src="./image/reviews-img/GLC63_Review/Glc63_banner1.webp" alt="GLC63s banner picture">
+            <div class="container text-light text-center">
+                <!-- review specs row -->
+                <div class="row text-center mt-4">
+                    <!-- Horsepower, occupying 4 columns-->
+                    <div class="col-4">
+                        <h1>510</h1>
+                        <p>HP</p>
+                    </div>
+                    <!-- Torque, occupying 4 columns with white border at the left and right-->
+                    <div class="col-4 border border-top-0 border-bottom-0 border-white">
+                        <h1>700</h1>
+                        <p>Nm</p>
+                    </div>
+                    <!-- 0-100 timing, occupying 4 columns  -->
+                    <div class="col-4">
+                        <h1>3.5s</h1>
+                        <p>0-100</p>
+                    </div>
+                </div>
+                <div class="row px-0 px-md-5 mt-3">
+                    <!-- review overview -->
+                    <h1>Overview</h1>
+                    <p>It looks and weighs like a dinosaur, its a two tonne SUV, which consumes fuel at a alarming rate. However
+                        it performs not just on the road but is made for off-roading as well. It all comes down to the powerful handdbuilt
+                        4.0L V8 engine that powers the car. It packs a punch of 503HP, which brings the car from 0-100 km/hr in 3.8seconds
+                        frightening figures for a car that weighs 2000kg. A 9-speed gearbox with lightning shifts come standard with the 
+                        car with the rear-biased 4Matic all wheel drive system.  
+                    </p>
+                    <!-- review image 1 -->
+                    <img class="px-5 my-4" src="./image/reviews-img/GLC63_Review/GLC63_shots1.jpg" alt="GLC63s picture around a corner">
+                    <!-- review of drive of the car -->
+                    <h1>Drive</h1>
+                    <p>The V8 rumble can be heard significantly in the cabin bringing smiles to the driver as well as the passengers alike
+                        with pops and crackles coming out from the exhaust as u downshift through the gears as well as the distinguish DSG 
+                        farts when u upshift while in sports mode. The throttle response from the engine is instant as well, having close to
+                        zero turbo lag.
+                    </p>
+                    <p>The weight of the vehicle starts to show as you start attacking the corners, being a SUV it has a high center of 
+                        gravity and u start to feel the rear wheels slipping when u drive on the limit. However the greatest complain that
+                        I have while driving the car is that even on comfort mode the suspension still feels too stiff and bumpy, and it
+                        is not something that I expected from a mercedes SUV.
+                    </p>
+                </div>
+                <!-- displayed image -->
+                <div class="row pt-3" id="display_pic">
+                    <img id="displayed_image" src="./image/reviews-img/GLC63_Review/GLC63_select1.webp" alt="GLC63s picture">
+                </div>
+                <!-- displayed image selections -->
+                <div class="row pt-5" id="GLC63_row">
+                    <img class="col-4 px-0" src="./image/reviews-img/GLC63_Review/GLC63_select1.webp" onclick="displayImage(this, 'image/reviews-img/GLC63_Review/GLC63_select1.webp', 'displayed_image', 'GLC63_row')" data-image="GLC63_select1.webp" alt="GLC63s picture">
+                    <img class="col-4 px-0" src="./image/reviews-img/GLC63_Review/GLC63_select2.webp" onclick="displayImage(this, 'image/reviews-img/GLC63_Review/GLC63_select2.webp', 'displayed_image', 'GLC63_row')" data-image="GLC63_select2.webp" alt="GLC63s interior">
+                    <img class="col-4 px-0" src="./image/reviews-img/GLC63_Review/GLC63_select3.webp" onclick="displayImage(this, 'image/reviews-img/GLC63_Review/GLC63_select3.webp', 'displayed_image', 'GLC63_row')" data-image="GLC63_select3.webp" alt="GLC63s rear view">
+                </div>            
+            </div>
+        </div>
+        <!-- RS3 review container collapsed when page loads up -->
+        <div class="container-fluid px-0 collapse" id="RS3">
+            <!-- review banner -->
+            <img class="img-fluid w-100" src="./image/reviews-img/RS3_review/RS3_banner.webp" alt="RS3 banner picture">
+            <div class="container text-light text-center">
+                <!-- review specs row -->
+                <div class="row text-center mt-4">
+                    <!-- Horsepower, occupying 4 columns-->
+                    <div class="col-4">
+                        <h1>400</h1>
+                        <p>HP</p>
+                    </div>
+                    <!-- torque, occupying 4 columns, and borders left and right-->
+                    <div class="col-4 border border-top-0 border-bottom-0 border-white">
+                        <h1>500</h1>
+                        <p>Nm</p>
+                    </div>
+                    <!-- 0-100km/hr, occupying 4 columns-->
+                    <div class="col-4">
+                        <h1>3.8s</h1>
+                        <p>0-100</p>
+                    </div>
+                </div>
+                <div class="row px-0 px-md-5 mt-3">
+                    <!-- review overview -->
+                    <h1>Overview</h1>
+                    <p>The 2023 Audi RS3 represents the pinnacle of Audi's performance-oriented compact sedan lineup. This sporty and dynamic 
+                        vehicle continues the tradition of blending everyday practicality with exhilarating performance. The 2023 RS3 
+                        showcases Audi's distinctive design language with a bold and aggressive front grille, RS-specific styling elements, 
+                        and a sleek and aerodynamic profile. It exudes a sense of athleticism and sophistication, making a striking impression
+                         on the road.
+                    </p>
+                    <!-- review image 1 -->
+                    <img class="px-5 my-4" src="./image/reviews-img/RS3_review/RS3_main.webp" alt="RS3 picture">
+                    <!-- review of drive of the car -->
+                    <h1>Drive</h1>
+                    <p>Under the hood, the 2023 Audi RS3 packs a punch with a turbocharged 2.5-liter inline-five-cylinder engine. This 
+                        engine is capable of producing impressive horsepower and torque figures, allowing the RS3 to accelerate from 0 to 60 mph
+                         in just a matter of seconds. Audi's quattro all-wheel-drive system ensures exceptional traction and stability, making it
+                          suitable for various driving conditions.
+                    </p>
+                    <p>The RS3's performance isn't limited to straight-line speed; its precision-tuned suspension and sharp steering deliver an 
+                        engaging and confidence-inspiring driving experience. Whether you're tackling winding mountain roads or navigating city streets,
+                         the RS3 offers a sporty and responsive ride.
+                    </p>
+                </div>
+                <!-- displayed image row-->
+                <div class="row pt-3" id="display_pic2">
+                    <img id="displayed_image2" src="./image/reviews-img/RS3_review/RS3_select1.webp" alt="RS3 picture">
+                </div>
+                <!-- displayed image selections row-->
+                <div class="row pt-5" id="RS3_row">
+                    <img class="col-4 px-0" src="./image/reviews-img/RS3_review/RS3_select1.webp" onclick="displayImage(this, 'image/reviews-img/RS3_review/RS3_select1.webp', 'displayed_image2', 'RS3_row')" data-image="RS3_select1.webp" alt="RS3 interior">
+                    <img class="col-4 px-0" src="./image/reviews-img/RS3_review/RS3_select2.webp" onclick="displayImage(this, 'image/reviews-img/RS3_review/RS3_select2.webp', 'displayed_image2', 'RS3_row')" data-image="RS3_select2.webp" alt="RS3 front photo">
+                    <img class="col-4 px-0" src="./image/reviews-img/RS3_review/RS3_select3.webp" onclick="displayImage(this, 'image/reviews-img/RS3_review/RS3_select3.webp', 'displayed_image2', 'RS3_row')" data-image="RS3_select3.webp" alt="RS3 sedan and hatchback photo">
+                </div>            
+            </div>
+        </div>
+        <!-- M3 review container collapsed when page loads up-->
+        <div class="container-fluid px-0 collapse" id="M3">
+            <!-- review banner -->
+            <img class="img-fluid w-100" src="./image/reviews-img/M3_Review/m3-banner.jpg" alt="M3 picture banner">
+            <div class="container text-light text-center">
+                <!-- review specs row -->
+                <div class="row text-center mt-4">
+                    <!-- Horsepower, occupying 4 columns-->
+                    <div class="col-4">
+                        <h1>502</h1>
+                        <p>HP</p>
+                    </div>
+                    <!-- torque, occupying 4 columns, and white borders left and right-->
+                    <div class="col-4 border border-top-0 border-bottom-0 border-white">
+                        <h1>650</h1>
+                        <p>Nm</p>
+                    </div>
+                    <!-- 0-100km/hr, occupying 4 columns-->
+                    <div class="col-4">
+                        <h1>3.4s</h1>
+                        <p>0-100</p>
+                    </div>
+                </div>
+                <div class="row px-0 px-md-5 mt-3">
+                    <!-- review overview -->
+                    <h1>Overview</h1>
+                    <p>It is still powered by the twin-straight six engine under its hood, pushing out 502 HP and 650 Nm, with it being rear-wheel
+                        drive and still being a 4 door saloon. That much is carried over by its predecessor. However, the previous 7-speed gearbox is
+                        being replaced by a 8-speed automatic gearbox. Even though it is part of the 3 series family, it is easy to identify a M3 due 
+                        to its fierce looking bodykit that comes standard with it.  
+                    </p>
+                    <!-- review image 1 -->
+                    <img class="px-5 my-4" src="./image/reviews-img/M3_Review/m3_main.webp" alt="M3 front view">
+                    <!-- review of drive of the car -->
+                    <h1>Drive</h1>
+                    <p>When we first test drove the car we were amazed by how quick and accurate the steering response is, giving the driver full confidence
+                        when attacking a corner at full speed as you will be able to know exactly how much the car will turn. It hands down has the best
+                        steering systems avaliable on any car in recent times.
+                    </p>
+                    <p>When it comes to the power, we have always known that BMW loves to undermine the true performance that their car has. When we tested
+                        BMW cars on a dyno, the numbers that comes out are always 5-10% more than what BMW claims. The power felt on this car is definately
+                        more than 650Nm the push that the engine gave was amazing. Throttle response was epic as well it feels like a drive by wire throttle.
+                    </p>
+                </div>
+                <!-- displayed image row-->
+                <div class="row pt-3" id="display_pic3">
+                    <img id="displayed_image3" src="./image/reviews-img/M3_Review/m3_select1.webp" alt="M3 front view">
+                </div>
+                <!-- displayed image selections row-->
+                <div class="row pt-5" id="M3_row">
+                    <img class="col-4 px-0" src="./image/reviews-img/M3_Review/m3_select1.webp" onclick="displayImage(this, './image/reviews-img/M3_Review/m3_select1.webp', 'displayed_image3', 'M3_row')" data-image="m3_select1.webp" alt="M3 front view">
+                    <img class="col-4 px-0" src="./image/reviews-img/M3_Review/m3_select2.webp" onclick="displayImage(this, './image/reviews-img/M3_Review/m3_select2.webp', 'displayed_image3', 'M3_row')" data-image="m3_select2.webp" alt="M3 cabin/ interior">
+                    <img class="col-4 px-0" src="./image/reviews-img/M3_Review/m3_select3.webp" onclick="displayImage(this, './image/reviews-img/M3_Review/m3_select3.webp', 'displayed_image3', 'M3_row')" data-image="m3_select3.webp" alt="M3 rear view">
+                </div>            
+            </div>
+        </div>
+        <!-- footer container,
+        mt-5 margin top,
+        px-5 padding x-axis,
+        text-light white text,
+        bg-gradient gradient background -->
+        <footer class="container-fluid mt-5 px-5 bg-gradient text-light">
+            <div class="footer_container">
+                <!-- magazine name occupy 1 row-->
+                <div class="row">
+                    <h2 class="mb-0 col-12">TORQUE MAGAZINE</h2>
+                </div>
+                <!-- useful info row -->
+                <div class="row pt-3">
+                    <!-- About us,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>About Us</h3>
+                        <h6>What we do?</h6>
+                        <h6>Career</h6>
+                        <h6>Advertisements</h6>
+                        <h6>Our Members</h6>
+                    </div>
+                    <!-- Contact us,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>Contact Us</h4>
+                        <h6>Address: Blk 758 Ang Mo Kio Ave 6 #01-73 S(560638)</6>
+                        <h6>Contact: +65 93635888</h5>
+                    </div>
+                    <!-- Social Media,
+                    occupy col-4 when medium screen,
+                    occupy col-12 when small screen,
+                    py-3 padding top and bottom -->
+                    <div class="col-12 col-md-4 py-3">
+                        <h4>Social Media</h4>
+                        <!-- social media icons -->
+                        <div class="row d-flex align-items-center">
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/insta_logo.png" alt="instagram link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/fb_logo.png" alt="facebook link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/twitter_logo.png" alt="twitter link"></a>
+                            <a class="col-3 col-lg-2"><img class="img-fluid" src="./image/footer_logo/whatsapp_logo.png" alt="whatsapp link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- bootstrap js -->
+    <script src="./js/js-bootstrap/bootstrap.min.js" defer></script>
+    <script src="./js/reviews.js"></script>
+    </body>
+</html>

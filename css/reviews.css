@@ -1,0 +1,32 @@
+/* Style for the top images of cards with a fixed height of 200 pixels */
+.card-img-top {
+    height: 200px; /* Adjust the desired height */
+    object-fit: cover; /* Crop and scale the images to fit the fixed height */
+}
+
+/* Style for a close button */
+#close {
+    font-size: 1.5rem; /* Set the font size for the close button */
+    position: fixed; /* Position the button fixed on the page */
+    top: 100px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    z-index: 1000; /* Set the stacking order to ensure it's above other elements */
+    border-radius: 15px; /* Add rounded corners to the button */
+    background-color: red; /* Set the background color to red */
+    color: white; /* Set the text color to white */
+    padding: 0 15px; /* Add padding to the button */
+    transition: top 0.5s ease-in-out; /* Apply a smooth transition effect for top position */
+    border: 2px solid white; /* Add a white border to the button */
+}
+
+/* Style for elements with the IDs 'displayed_image' and 'displayed_image2' */
+#displayed_image,
+#displayed_image2 {
+    transition: opacity 0.5s ease-in-out; /* Apply a smooth opacity transition effect */
+    opacity: 1; /* Set the initial opacity to 1 (fully visible) */
+}
+
+/* Style for the selected image with a 5px solid border in a specific color */
+.selected-image {
+    border: 5px solid rgb(216, 186, 36); /* Adjust border properties and color as needed */
+}
