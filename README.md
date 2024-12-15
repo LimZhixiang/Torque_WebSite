@@ -50,8 +50,8 @@ Link to webpage is avaliable <a href="https://limzhixiang.github.io/Torque_WebSi
 ## Built With
 <img src="https://skillicons.dev/icons?i=html,css,javascript,github,bootstrap">
 
+<!-- Cloning and setup of the project -->
 ## Getting started
-
 ### Run Locally
 Clone the project
 ```bash
@@ -63,8 +63,12 @@ cd Torque_WebSite
 ```
 Open the index.html in your web browser
 
+<!-- video recording and features of each webpage -->
 ## ScreenShots and Features
 ### HomePage
+The Home Page serves as the central hub for the Torque Car Magazine Web App, providing an overview of the website's offerings. 
+</br>
+</br>
 Features of Hompage
 <ul>
 	<li>Responsive webpage which adjust across different screen Sizes</li>
@@ -72,8 +76,50 @@ Features of Hompage
 	<li>Interactive carousel with fade transitions between slides, with Previous and Next Buttons for manual navigation</li>
 	<li>Car review section with 3 car review cards with toggle button to reveal or hide specifications</li>
 </ul>
+</br>
 
 ![homepage demo](https://github.com/user-attachments/assets/04a7aba5-0019-4d94-9976-165e17052c9d)
 
 ### Car Reviews
+The Car Reviews Page dives into detailed reviews of featured cars. Users can interact with collapsible sections to view full reviews, including specs, images, and in-depth insights.
+</br>
+</br>
 Features of Car Reviews page
+
+<ul>
+	<li>Detailed reviews for each car are hiddden by default and dynamically displayed when selected.</li>
+	<li>Dynamc positioning of the close button for the detailed review based on the scroll possition relative to the navigation bar.</li>
+	<li>Users can select images from a carousel-style gallery to display larger views in detailed review page. Fade-out and fade-in animations enhance user experience during image transitions.</li>
+</ul>
+</br>
+
+![Review Demo](https://github.com/user-attachments/assets/8510d383-7d0b-42f0-a018-58df6b08f4ef)
+
+### Car Share
+The Car Share Page is a community-driven feature allowing users to upload and share their car pictures with captions. Posts are dynamically added to the top of the feed without reloading the page, creating a seamless and interactive experience that mirrors the functionality of a mini social media platform.
+</br>
+</br>
+Features of car share page
+<ul>
+	<li>User-Driven Content Sharing users can upload images of their cars using a file input and captions can be added to describe the uploaded image.</li>
+	<li>New post by the user are dynamically added to the top of the shared post feed without refreshing of the page. Post maintain a consistent style and are seamlessly integrated with existing content.</li>
+</ul>
+</br>
+
+![Car Share Demo](https://github.com/user-attachments/assets/e2c45836-85dc-474a-ad21-a5100046f279)
+
+### Events
+The events page is a interactive and dynamic platform to keep the users well informed and engaged with the latest events, and also highlights of past events. Allows users to register for upcoming events, with a easy to use registration system.
+</br>
+</br>
+Features of car share page
+<ul>
+	<li>Features a prominent video showcasing the key moments from past events</li>
+	<li>Photo carousel that automatically transitions every 5 second with smooth fade-in and fade-out animations</li>
+	<li>Interactive registration form for users to register for upcoming events, with a successful registration confirmation message complete with fade-in and fade-out animation.</li>
+</ul>
+</br>
+
+![events demo](https://github.com/user-attachments/assets/39eb5cf0-bc85-44ed-95e9-e5efac5e563a)
+
+## F1
