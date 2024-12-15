@@ -28,7 +28,7 @@
 				<li><a href='#car-reviews'>Car Reviews</a></li>
 				<li><a href='#car-share'>Car Share</a></li>
 				<li><a href='#events'>Events</a></li>
-				<li><a href='f1'>F1</a></li>
+				<li><a href='#f1'>F1</a></li>
 			</ul>
 		</li>
 		<li>
@@ -41,6 +41,7 @@
 ## About the Project
 I love cars and this project was a personal project that showcases the development of a dynamic and responsive car magazine webpage, designed to highlight the latest in automotive news, reviews and trends. It is a static webpage created as a learning project to explore and enhance my skills in web development.
 </br>
+
 ![Torque About The Project](https://github.com/user-attachments/assets/1fe1d479-d9a9-4d8a-ae5f-11f9a1245af6)
 
 <!-- live demo link -->
@@ -122,4 +123,20 @@ Features of car share page
 
 ![events demo](https://github.com/user-attachments/assets/39eb5cf0-bc85-44ed-95e9-e5efac5e563a)
 
-## F1
+### F1
+The F1 Page showcases upcoming Formula 1 races with race dates, country flags, and circuit layouts. Featuring dynamic scroll animations and a responsive design, it provides an engaging and seamless experience for F1 fans to stay updated.
+</br>
+</br>
+Features of F1 page
+<ul>
+	<li>Dynamic scroll animation, race cards are revealed dynamically as users scroll down the page, enhancing user engagement with smooth animations.</li>
+</ul>
+</br>
+
+![F1 demo](https://github.com/user-attachments/assets/e480ea58-9ab2-4d29-abef-7945fd851c5d)
+
+
+## Contact
+If you have any questions or suggestions, feel free to reach out to me!
+- Email: [zxlim.mail@gmail.com](mailto:zxlim.mail@gmail.com)
+- LinkedIn: [Zhi Xiang Lim](https://www.linkedin.com/in/zhixiang-lim-a705952b3/)
